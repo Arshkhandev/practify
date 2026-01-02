@@ -32,11 +32,11 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-black
+        className={`md:hidden absolute top-full left-0 w-full
         transition-all duration-300 overflow-hidden
         ${open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}
       >
-        <div className="flex flex-col gap-4 px-4 py-4 items-end">
+        <div className="flex flex-col gap-4 px-4 py-4 items-end ">
           <Link href="/category" onClick={() => setOpen(false)}>Category</Link>
           <Link href="/products" onClick={() => setOpen(false)}>Products</Link>
           <Link href="/cart" onClick={() => setOpen(false)}>Cart</Link>
