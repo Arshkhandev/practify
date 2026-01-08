@@ -7,12 +7,17 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-black relative z-50">
+    <nav className="w-full bg-linear-to-r from-white to-black relative z-50">
       {/* Top Bar */}
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Logo */}
-       <Link href={'/'}> <h1 className="text-lg font-bold">LOGO</h1></Link>
+       <Link href={'/'}> <h1 className="text-l font-extrabold
+           bg-linear-to-r from-black to-white
+           bg-clip-text text-transparent ">
+ Practify
+</h1>
+</Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6">
@@ -24,7 +29,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-2xl"
+          className="md:hidden text-2xl text-white opacity-40"
         >
           ☰
         </button>
