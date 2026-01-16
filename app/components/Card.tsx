@@ -32,7 +32,7 @@ export default function Cards({ item }: CardProps) {
     <p className="font-semibold">${item.price}</p>
 
     <Button onClick={() => setAdd(!add)}>
-      {add ? "Remove" : "Add to Cart"}
+      {!add ? "Remove" : "Add to Cart"}
     </Button>
 
   </CardContent>
